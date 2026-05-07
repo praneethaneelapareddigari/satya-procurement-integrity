@@ -94,3 +94,17 @@ Full API docs at: `http://localhost:8000/docs`
 - Aanchal
 
 **AI for Bharat Hackathon 2026 | Theme 3 | CRPF Procurement**
+
+## 📸 Screenshots
+
+### Landing Page
+![Landing Page](screenshots/01-landing.png)
+
+### Evaluation Matrix — 1 Eligible, 1 Rejected, 1 Escalated
+![Evaluation Matrix](screenshots/02-matrix.png)
+
+### Detailed Evidence — Per Criterion with AI Reasoning
+![Detailed Evidence](screenshots/03-evidence.png)
+
+### Risk Signals — Duplicate GSTIN Fraud Detection
+![Risk Signals](screenshots/05-risks.png)
