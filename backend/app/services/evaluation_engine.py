@@ -67,10 +67,10 @@ def _determine_overall_verdict(bidder_result):
     mandatory = [v for v in verdicts if v["is_mandatory"]]
     if any(v["verdict"] == "ESCALATED" for v in mandatory):
         overall = "ESCALATED"
-    elif any(v["verdict"] == "NEEDS_REVIEW" for v in mandatory):
-        overall = "NEEDS_REVIEW"
     elif any(v["verdict"] == "NOT_ELIGIBLE" for v in mandatory):
         overall = "NOT_ELIGIBLE"
+    elif any(v["verdict"] == "NEEDS_REVIEW" for v in mandatory):
+        overall = "NEEDS_REVIEW"
     elif all(v["verdict"] == "ELIGIBLE" for v in mandatory):
         overall = "ELIGIBLE"
     else:
@@ -86,7 +86,7 @@ def _get_mock_verdict(criterion_code, bidder_name):
             "C1": {"verdict": "ELIGIBLE", "confidence": 0.91, "evidence_value": "Rs. 7.2 crore (FY24-25)", "evidence_source": "financial_statement.pdf, page 1", "reasoning": "Turnover of Rs. 7.2 crore exceeds required Rs. 5 crore.", "missing_info": None},
             "C2": {"verdict": "ELIGIBLE", "confidence": 0.88, "evidence_value": "4 similar projects", "evidence_source": "experience_letter.pdf, page 1", "reasoning": "4 projects found, all above Rs. 2 crore, within last 5 years.", "missing_info": None},
             "C3": {"verdict": "ELIGIBLE", "confidence": 0.99, "evidence_value": "GSTIN: 29AABCA1234R1ZX", "evidence_source": "gst_certificate.pdf, page 1", "reasoning": "Valid GST registration. Status: Active.", "missing_info": None},
-            "C4": {"verdict": "NEEDS_REVIEW", "confidence": 0.61, "evidence_value": "ISO 9001:2015 found", "evidence_source": "iso_certificate_scan.jpg", "reasoning": "ISO certificate found but scan quality is poor (61% confidence).", "missing_info": "Request clear digital copy"},
+            "C4": {"verdict": "ELIGIBLE", "confidence": 0.87, "evidence_value": "ISO 9001:2015 certified (valid till 2026)", "evidence_source": "iso_certificate.pdf, page 1", "reasoning": "Valid ISO 9001:2015 certificate found. Expiry date confirmed.", "missing_info": None},
             "C5": {"verdict": "ELIGIBLE", "confidence": 0.84, "evidence_value": "73 employees", "evidence_source": "experience_letter.pdf", "reasoning": "73 employees exceeds optional requirement of 50.", "missing_info": None},
         },
         "XYZ Infrastructure Pvt Ltd": {
