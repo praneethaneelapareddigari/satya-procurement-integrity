@@ -120,3 +120,12 @@ Full API docs at: `http://localhost:8000/docs`
 
 ### Final Risk Signals
 ![Final Risks](screenshots/10-risks-final.png)
+
+### RTI Audit Report (PDF Export)
+The system generates a fully RTI-compliant audit report with:
+- All extracted criteria with thresholds
+- Per-bidder, per-criterion verdicts with evidence sources
+- Risk & fraud signals with recommended actions
+- Officer declaration and signature section
+
+📄 [Download Sample RTI Audit Report](screenshots/SATYA_Audit_Report.pdf)
