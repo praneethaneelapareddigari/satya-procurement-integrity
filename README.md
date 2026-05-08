@@ -108,3 +108,15 @@ Full API docs at: `http://localhost:8000/docs`
 
 ### Risk Signals — Duplicate GSTIN Fraud Detection
 ![Risk Signals](screenshots/05-risks.png)
+
+### Real PDF Upload — Groq AI Extracting 4 Criteria Live
+![Upload Success](screenshots/07-upload-success.png)
+
+### Final Evaluation Matrix
+![Final Matrix](screenshots/08-matrix-final.png)
+
+### Final Detailed Evidence
+![Final Evidence](screenshots/09-evidence-final.png)
+
+### Final Risk Signals
+![Final Risks](screenshots/10-risks-final.png)
